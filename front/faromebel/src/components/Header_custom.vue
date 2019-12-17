@@ -31,20 +31,27 @@
         </div>
       </li>
     </ul>
+    <transition name="fade">
+    <popup-feedback  v-if="showPopupFeedback" :show-popup-feedback.sync="showPopupFeedback"/>
+    </transition>
   </div>
 </template>
 
 <script>
+  import PopupFeedback from "./main/PopupFeedback";
   export default {
     name: "Header",
+    components: {PopupFeedback},
     data() {
       return {
         statusNumber: false,
+        showPopupFeedback: false,
       }
     },
     methods: {
       clickNumber() {
         this.statusNumber = !this.statusNumber;
+        this.showPopupFeedback = !this.showPopupFeedback;
       }
     }
   }
@@ -131,7 +138,12 @@
     display: inline-block;
     margin-left: 10px;
   }
-
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .8s;
+  }
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+  }
   @media (max-width: 1080px) {
 
   }

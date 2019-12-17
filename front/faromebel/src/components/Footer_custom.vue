@@ -75,7 +75,7 @@
     font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
     margin-left: 310px;
     width: calc(100% - 310px);
-    background-color: #ededed;
+    background-color: #f9fbff;
     display: flex;
     justify-content: space-around;
   }

@@ -10,9 +10,15 @@
     import Slider from "./main/Slider";
     import GoodsLists from "./main/GoodsLists";
     import HitSalesmen from "./main/HitSalesmen";
+    import PopupFeedback from "./main/PopupFeedback";
     export default {
         name: "Main",
-      components: {HitSalesmen, GoodsLists, Slider}
+      components: {HitSalesmen, GoodsLists, Slider},
+      data() {
+          return {
+
+          }
+      }
     }
 </script>
 

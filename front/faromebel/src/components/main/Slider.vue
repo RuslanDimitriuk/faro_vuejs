@@ -1,5 +1,5 @@
 <template>
-  <hooper :progress="true" :autoPlay="true" :playSpeed="2000" :infiniteScroll="true" :transition="1500">
+  <hooper :progress="true" :autoPlay="true" :playSpeed="6000" :infiniteScroll="true" :transition="6500">
     <slide>
       <div class="main__slider slide1">
       </div>
