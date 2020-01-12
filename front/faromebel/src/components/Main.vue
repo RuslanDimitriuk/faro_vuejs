@@ -3,6 +3,7 @@
     <slider class="main__slider"/>
     <goods-lists/>
     <hit-salesmen/>
+    <hit-goods/>
   </div>
 </template>
 
@@ -11,9 +12,10 @@
     import GoodsLists from "./main/GoodsLists";
     import HitSalesmen from "./main/HitSalesmen";
     import PopupFeedback from "./main/PopupFeedback";
+    import HitGoods from "./main/hitGoods";
     export default {
         name: "Main",
-      components: {HitSalesmen, GoodsLists, Slider},
+      components: {HitGoods, HitSalesmen, GoodsLists, Slider},
       data() {
           return {
 
