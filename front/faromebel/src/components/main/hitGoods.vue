@@ -22,7 +22,8 @@
           newPrice: '9000',
           long: '100',
           weight: '25',
-          height: '34'
+          height: '34',
+          inStock: true
         }, {
           name: 'Элиана',
           imgName: 'Eliana',
@@ -31,7 +32,8 @@
           newPrice: '9000',
           long: '100',
           weight: '25',
-          height: '35'
+          height: '35',
+          inStock: false
         }, {
           name: 'Венера',
           imgName: 'venera',
@@ -40,7 +42,38 @@
           newPrice: '9000',
           long: '10000',
           weight: '25000',
-          height: '3600'
+          height: '3600',
+          inStock: true
+        },{
+          name: 'Афина',
+          imgName: 'Afina',
+          category: 'Спальный гарнитур',
+          price: '10000',
+          newPrice: '9000',
+          long: '100',
+          weight: '25',
+          height: '34',
+          inStock: true
+        }, {
+          name: 'Элиана',
+          imgName: 'Eliana',
+          category: 'Спальный гарнитур',
+          price: '10000',
+          newPrice: '9000',
+          long: '100',
+          weight: '25',
+          height: '35',
+          inStock: false
+        }, {
+          name: 'Венера',
+          imgName: 'venera',
+          category: 'Спальный гарнитур',
+          price: '10000',
+          newPrice: '9000',
+          long: '10000',
+          weight: '25000',
+          height: '3600',
+          inStock: true
         }]
       }
     }

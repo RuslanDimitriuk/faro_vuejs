@@ -42,7 +42,10 @@
         </div>
       </div>
       <div class="card__data-block">
-        <button class="card__data-button">заказать</button>
+        <button class="card__data-button">
+          <span v-if="dataObject.inStock">Купить</span>
+          <span v-if="!dataObject.inStock">Заказать</span>
+        </button>
       </div>
     </div>
   </div>
@@ -95,7 +98,7 @@
   .card:hover {
     border-radius: 5px 5px 0 0;
     position: relative;
-    z-index: 2222;
+    z-index: 100;
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, .3);
   }
 
@@ -199,7 +202,7 @@
   .card__data_view {
     display: block;
     position: absolute;
-    z-index: 1000;
+    z-index: 100;
     top: 100%;
     width: 100%;
     background-color: #fff;
