@@ -32,7 +32,7 @@
       </li>
     </ul>
     <transition name="fade">
-    <popup-feedback  v-if="showPopupFeedback" :show-popup-feedback.sync="showPopupFeedback"/>
+    <popup-feedback class="header__popup"  v-show="showPopupFeedback" :show-popup-feedback.sync="showPopupFeedback"/>
     </transition>
   </div>
 </template>
@@ -137,6 +137,9 @@
     font-size: 20px;
     display: inline-block;
     margin-left: 10px;
+  }
+  .header__popup{
+
   }
   .fade-enter-active, .fade-leave-active {
     transition: opacity .8s;

@@ -3,7 +3,12 @@
     <slider class="main__slider"/>
     <goods-lists/>
     <hit-salesmen/>
-    <hit-goods/>
+    <div>
+      <div>
+        <span class="main__hit-goods-title">Хиты продаж</span>
+      </div>
+      <hit-goods/>
+    </div>
   </div>
 </template>
 
@@ -27,5 +32,13 @@
 <style scoped>
   .main {
 
+  }
+  .main__hit-goods-title{
+    margin: 60px auto 40px;
+    display: flex;
+    justify-content: center;
+    color: #000;
+    font-size: 3vw;
+    text-transform: uppercase;
   }
 </style>
