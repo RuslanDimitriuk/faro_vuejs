@@ -13,6 +13,7 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  plugins: ['./plugins/vuemask.client.js'],
   /*
   ** Customize the progress bar color
   */
@@ -20,7 +21,9 @@ module.exports = {
   /*
   ** Build configuration
   */
+  axios: ['./configs/axios.js'],
   build: {
+    vendor: ['axios'],
     /*
     ** Run ESLint on save
     */
