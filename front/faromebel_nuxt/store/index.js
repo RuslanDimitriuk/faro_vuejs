@@ -1,5 +1,6 @@
 // import main from './modules/main/index'
 import global from './modules/global/index'
+import products from './modules/products/index'
 import Vue from 'vue'
 import Vuex from 'vuex'
 
@@ -14,6 +15,7 @@ const store = () => new Vuex.Store({
   },
   modules: {
     global,
+    products
   }
 });
 export default store;

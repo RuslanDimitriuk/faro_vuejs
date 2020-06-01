@@ -1,9 +1,9 @@
 <template>
   <div>
-    <the-header class="header"/>
-    <navigation class="app__navigate"/>
+    <the-header/>
+    <navigation class="app__navigate" :class="{app__navigate_min : getPath}"/>
     <div>
-      <nuxt class="main-conteiner"/>
+      <nuxt class="main-conteiner" :class="{main_conteiner_min : getPath}"/>
     </div>
     <the-footer/>
   </div>
@@ -14,14 +14,30 @@
   import Navigation from "../components/globalCamponents/Navigation";
 
   export default {
-    components: {Navigation, TheHeader, TheFooter}
+    components: {Navigation, TheHeader, TheFooter},
+    computed:{
+      getPath() {
+        if (this.$route.path === '/'){
+          return false;
+        } else {
+          return true;
+        }
+      }
+    }
   }
 </script>
 <style lang="scss">
   @import "./../node_modules/css-reset/reset.css";
+  @font-face {
+    font-family: 'Circe Light';
+    src: url('./../static/fonts/Circe-Light.woff') format('woff'),
+    url('./../static/fonts/Circe-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
   html {
-    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: Circe Light, Roboto, Helvetica, sans-serif;
     font-size: 16px;
     word-spacing: 1px;
     -ms-text-size-adjust: 100%;
@@ -66,6 +82,8 @@
   }
 
   .app__navigate{
+    position: relative;
+    z-index: 10000;
     width: 310px;
     position: fixed;
     left: 0px;
@@ -75,21 +93,19 @@
   .main-conteiner{
     margin-left: 310px;
   }
-  .header{
-    width: 100%;
-    position: fixed;
-    top: 0px;
-  }
-  @font-face {
-    font-family: Roboto;
-    src: url(./../static/fonts/roboto-thin.ttf);
-  }
+
   $darkSlateGray: #1c3632;
   $teal: #366;
   $lightCyan: #9cc;
   $gainsboro: #ccc;
   $darkCyan: #399;
   $gray: #999;
+  .app__navigate_min{
+    width: 100px;
+  }
+  .main_conteiner_min{
+    margin-left: 100px;
+  }
   @media (max-width: 1080px) {
     .app__navigate {
      width: 100px;

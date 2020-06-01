@@ -16,7 +16,7 @@
   import Slider from "./../components/main/Slider";
   import GoodsLists from "./../components/main/GoodsLists";
   import HitSalesmen from "./../components/main/HitSalesmen";
-  import HitGoods from "./../components/main/hitGoods";
+  import HitGoods from "../components/main/HitGoods";
 
   export default {
     name: "Main",

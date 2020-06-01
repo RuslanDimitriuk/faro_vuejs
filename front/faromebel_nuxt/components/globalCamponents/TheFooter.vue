@@ -72,7 +72,7 @@
     color: darkSlateGray;
   }
   .footer {
-    font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: Circe Light, Roboto, Helvetica, sans-serif;
     margin-left: 310px;
     width: calc(100% - 310px);
     background-color: #f9fbff;

@@ -1,0 +1,3 @@
+export const ADD_PRODUCT_IN_LIST = 'ADD_PRODUCT_IN_LIST';
+export const ADD_CURRENT_TOVAR = 'ADD_CURRENT_TOVAR';
+export const ADD_HIT_TOVAR = 'ADD_HIT_TOVAR';
